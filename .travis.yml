@@ -26,6 +26,9 @@ matrix:
       env: COMPILER=clang++ RUSTC_DATE=2016-10-06
 
 install:
+  - cd ../../
+  - mv 932280190 pingcap
+  - cd pingcap/tikv
   - export LOCAL_DIR=$HOME/.cache/
   - export PATH=$PATH:$LOCAL_DIR/bin:$HOME/.cargo/bin
   - export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:$LOCAL_DIR/lib
