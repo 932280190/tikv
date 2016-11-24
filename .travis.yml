@@ -38,6 +38,7 @@ install:
   - make -f travis-build/Makefile prepare_${TRAVIS_OS_NAME}
 
 script:
+  - pwd
   - make -f travis-build/Makefile test_${TRAVIS_OS_NAME}
 
 after_success:
