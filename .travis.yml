@@ -39,7 +39,7 @@ install:
 script:
   - ls
   - pwd
-  - make -f travis-build/Makefile test_${TRAVIS_OS_NAME}
+  - make test#-f travis-build/Makefile test_${TRAVIS_OS_NAME}
 
 after_success:
   # TODO add following into build progress after failed cases are resolved.
